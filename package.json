@@ -2,7 +2,7 @@
   "name": "muted",
   "theme": "syntax",
   "version": "0.1.0",
-  "description": "Muted white color scheme for atom",
+  "description": "Muted white theme for atom",
   "repository": "https://github.com/caffo/muted",
   "license": "MIT",
   "engines": {
