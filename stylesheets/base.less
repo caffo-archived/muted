@@ -1,100 +1,30 @@
-@import "syntax-variables";
+// This defines all syntax variables that syntax themes must implement when they
+// include a syntax-variables.less file.
 
-.editor {
-  background-color: @syntax-background-color;
-  color: @syntax-text-color;
-}
+// General colors
+@syntax-text-color: #C0B6A8;
+@syntax-cursor-color: #D0C179;
+@syntax-selection-color: #f1f1f1;
+@syntax-background-color: #ffffff;
 
-.editor .gutter {
-  background-color: @syntax-gutter-background-color;
-  color: @syntax-gutter-text-color;
-}
+// Guide colors
+@syntax-wrap-guide-color: #F7F4E8;
+@syntax-indent-guide-color: #F7F4E8;
+@syntax-invisible-character-color: #F7F4E8;
 
-.editor .gutter .line-number.cursor-line {
-  background-color: @syntax-gutter-background-color-selected;
-  color: @syntax-gutter-text-color-selected;
-}
+// For find and replace markers
+@syntax-result-marker-color: #bbbbbb;
+@syntax-result-marker-color-selected: #C0B6A8;
 
-.editor .gutter .line-number.cursor-line-no-selection {
-  color: @syntax-gutter-text-color-selected;
-}
+// Gutter colors
+@syntax-gutter-text-color: #C0B6A8;
+@syntax-gutter-text-color-selected: #C0B6A8;
+@syntax-gutter-background-color: #ffffff;
+@syntax-gutter-background-color-selected: #FAFAFA;
 
-.editor .wrap-guide {
-  color: @syntax-wrap-guide-color;
-}
-
-.editor .indent-guide {
-  color: @syntax-indent-guide-color;
-}
-
-.editor .invisible-character {
-  color: @syntax-invisible-character-color;
-}
-
-.editor .search-results .marker .region {
-  background-color: transparent;
-  border: @syntax-result-marker-color;
-}
-
-.editor .search-results .marker.current-result .region {
-  border: @syntax-result-marker-color-selected;
-}
-
-.editor.is-focused .cursor {
-  border-color: @syntax-cursor-color;
-}
-
-.editor.is-focused .selection .region {
-  background-color: @syntax-selection-color;
-}
-
-.editor.is-focused .line-number.cursor-line-no-selection, .editor.is-focused .line.cursor-line {
-  background-color: @syntax-gutter-background-color-selected;
-}
-
-.comment {
-  color: #7c7c7c;
-}
-
-.string {
-  color: #817567;
-}
-
-.constant.numeric {
-  color: #817567;
-}
-
-.keyword {
-  color: #756864;
-}
-
-.storage {
-  color: #756864;
-}
-
-.constant {
-  color: #756864;
-}
-
-.invalid {
-  color: #9e8f4d;
-}
-
-.entity.name {
-  font-weight: bold;
-  color: #817567;
-}
-
-.variable {
-  color: #6b605c;
-}
-
-.bracket-matcher {
-  background-color: #F7F7F7;
-  opacity: .7;
-  border-bottom: 0 none;
-}
-
-.editor .wrap-guide {
-  background-color: #F7F7F7;
-}
+// For git diff info. i.e. in the gutter
+// These are static and were not extracted from your textmate theme
+@syntax-color-renamed: #96CBFE;
+@syntax-color-added: #A8FF60;
+@syntax-color-modified: #E9C062;
+@syntax-color-removed: #CC6666;
